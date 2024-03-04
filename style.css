@@ -291,7 +291,7 @@ html{
         display: flex;
        justify-content: space-between;
        position: relative;
-       width: 352px;
+       width: auto;
        border-radius: 10px;
 
     }
@@ -323,5 +323,11 @@ html{
         max-width: 164px;
         height: auto;
         margin: -70px;
+    }
+     .menu li{
+        display: none;
+    }
+    .links{
+        display: none;
     }
 }
