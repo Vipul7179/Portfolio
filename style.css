@@ -330,4 +330,20 @@ html{
     .links{
         display: none;
     }
+     .my-name span{
+        padding: 0px;
+    } 
+
+    .part1 {
+        padding: 20px; 
+        flex-direction: column; 
+        text-align: center; 
+    }
+    .part1 .first-video-mesage h1{
+        font-size: 31px;
+    }
+
+    .my-name span{
+        color: #f46f3a;
+    }
 }
