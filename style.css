@@ -355,6 +355,9 @@ html{
         color: #f46f3a;
     }
 
+    .part1 {
+    flex-direction: column;
+  }
       .first-video {
     order: 2; /* Images second */
   }
