@@ -172,6 +172,14 @@
     height: auto;
 }
 
+.first-video {
+  order: 2;
+}
+
+.first-video-mesage {
+  order: 1;
+}
+
 /* Footer  css start ==================================*/
 
 .footer {
@@ -346,4 +354,12 @@ html{
     .my-name span{
         color: #f46f3a;
     }
+
+      .first-video {
+    order: 2; /* Images second */
+  }
+
+  .first-video-mesage {
+    order: 1; /* Paragraphs first */
+  }
 }
