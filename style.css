@@ -180,6 +180,38 @@
   order: 1;
 }
 
+.textdiscription1{
+    color: white;
+    font-size: 17px;
+}
+
+.typewriter{
+    display: inline-block;
+}
+.textdiscription {
+    color: #f46f3a;
+   font-size: 20px;
+   /* letter-spacing: 10px; */
+   font-family: monospace;
+   border-right: 5px solid;
+   width: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   animation: typing 3s steps(17),cursor .7s step-end infinite alternate;
+
+}
+
+
+  
+  @keyframes cursor {
+  
+    0%{border-color: transparent;}
+  }
+  
+  @keyframes typing {
+    from {width: 0}
+  }
+
 /* Footer  css start ==================================*/
 
 .footer {
