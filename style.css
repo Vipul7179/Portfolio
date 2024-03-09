@@ -412,6 +412,7 @@ html{
     order: 1; /* Paragraphs first */
   }
      .textdiscription1{
+      margin-top: -16px;
     text-align: left;
   }
 }
