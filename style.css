@@ -422,6 +422,10 @@ html{
     background-color: white;
     gap: 10px;
 }
+.Project-domain1{
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 @media (max-width: 768px){
     .pic-section{
