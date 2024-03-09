@@ -3,6 +3,9 @@ body{
 
 }
 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
     width: 100%;
     overflow-x: hidden;
@@ -73,6 +76,47 @@ body{
 
 .links a{
     margin-right: -29px!important;
+}
+
+
+
+/* side menu */
+.side-menu{
+    color: #f46f3a;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-menu.open{
+    height: 240px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: 10px;
+    overflow: hidden;
+    transition: max-height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.side-menu .dropdown-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* download cv button start*/
@@ -222,10 +266,11 @@ body{
     color: white;
     font-size: 17px;
     text-align: center;
+
 }
 
 .typewriter{
-     font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     display: inline-block;
@@ -234,16 +279,16 @@ body{
     color: #f46f3a;
    font-size: 20px;
    /* letter-spacing: 10px; */
-/*    font-family: monospace; */
+   /* font-family: monospace; */
    border-right: 5px solid;
    width: 100%;
    white-space: nowrap;
    overflow: hidden;
    animation: typing 3s steps(17),cursor .7s step-end infinite alternate;
-    font-family: "Poppins", sans-serif;
+
+   font-family: "Poppins", sans-serif;
    font-weight: 500;
    font-style: normal;
-
 }
 
 
@@ -303,7 +348,7 @@ body{
     display: inline-block;
     height: 40px;
     width: 40px;
-     background-color: rgba(105 70 70 / 80%);
+    background-color: rgba(105 70 70 / 80%);
     margin-right: 10px;
     margin-bottom: 10px;
     text-align: center;
@@ -412,9 +457,9 @@ html{
      .menu li{
         display: none;
     }
-/*     .links{
+    .links{
         display: none;
-    } */
+    }
      .my-name span{
         padding: 0px;
     } 
@@ -442,11 +487,15 @@ html{
   .first-video-mesage {
     order: 1; /* Paragraphs first */
   }
-     .textdiscription1{
-      margin-top: -16px;
+  /* Break the line when it covers 80% of the container's width */
+
+  .textdiscription1{
+    margin-top: -16px;
     text-align: left;
   }
-    .footer-col{
+
+
+.footer-col{
     margin-bottom: -19px;
     margin-top: -49px;
     padding-left: 15px;
@@ -458,7 +507,19 @@ html{
 .myemail{
     padding-top: 0px;
 }
-    .side-menu{
+
+.side-menu{
+    display: block;
+}
+
+
+/* side menu */
+.dropdown-menu {
+    left: 2rem;
+    width: unset;
     display: block;
 }
 }
+
+
+
