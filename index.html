@@ -40,12 +40,22 @@
       </div>
     </div>
   </div>
-      </nav> 
- 
-        
-  
+      </nav>  
       
       <!-- header end -->
+
+      <!-- header dropdown menu -->
+      <div class="dropdown-menu">
+        <li><a href="#" class="active">ABOUT</a></li>
+        <li><a href="#about">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="links">
+          <a target="_blank" href="https://www.linkedin.com/in/vipul-singh-46792a1a4/"><i class="fab fa-linkedin" style="color: rgb(160, 200, 250);margin-right: 10px;"></i></a>
+          <a target="_blank" href="https://www.instagram.com/v_i_p_u_ll/"><i class="fa-brands fa-instagram" style="color: rgb(255, 37, 255);margin-right: 10px;"></i></a>
+          <a target="_blank" href="https://github.com/Vipul7179?tab=repositories"><i class="fa-brands fa-github" style="color: white;"></i></a>
+
+      </div>
 
      <!-- Banner start -->
 <div class="pic-section">
@@ -66,11 +76,11 @@
       <img src="https://vipul7179.github.io/Portfolio/1654871064109-removebg-preview.png" alt="Tools Image">
   </div>
 </div>
-
 <div class="typewriter">
 <p style="color: #f46f3a;" class="textdiscription">Hello i am Vipul,</p>
 <p style="color: white;" class="textdiscription1">I am a QA engineer adept in manual and automation testing, dedicated to enhancing software quality for flawless performance. Explore my portfolio to see how I elevate standards and empower products.</p>
 </div>
+
       <section   class="part1" data-aos="fade">
         <div id="about" class="first-video-mesage" >
             <h1 style="color: #f46f3a;">Selenium with Java</h1>
@@ -158,6 +168,21 @@
         </script>
     
 
+    <script>
+      const toggleBtn = document.querySelector('.side-menu')
+      const toggleBtnIcon = document.querySelector('.side-menu i')
+      let isOpen = false;
+      const toggleBtnMenu = document.querySelector('.dropdown-menu')
+
+      toggleBtn.onclick - function () {
+        toggleBtnMenu.classList.toggle('open')
+        isOpen = !isOpen;
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        :'fa-solid fa-bars'
+      }
+
+    </script>
      
 </body>
 
