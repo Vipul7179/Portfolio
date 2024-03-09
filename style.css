@@ -30,10 +30,27 @@ body{
     
 }
 
-.menu {
+.header-content {
     display: flex;
-    list-style-type: none;
+    justify-content: space-between; /* Aligns children (menu and my-name) to each end */
+    align-items: center; /* Vertically centers items */
+    width: 100%; /* Ensures the div takes full width of its parent */
 }
+
+.menu, .my-name {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+}
+.navigation, .container {
+    height: 40px; /* Or ensure it's sufficiently large */
+    overflow-y: hidden;
+  }
 
 .menu li a {
     text-decoration: none;
@@ -41,7 +58,21 @@ body{
     margin: 0px 15px;
     color: #ffffff;
     font-weight: 500;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
+}
+
+.my-name a {
+    text-decoration: none; 
+    color: #000; 
+}
+
+.links a, .my-name a {
+    text-decoration: none;
+    margin-right: 10px; 
+}
+
+.links a{
+    margin-right: -29px!important;
 }
 
 /* download cv button start*/
