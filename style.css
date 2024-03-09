@@ -419,13 +419,34 @@ html{
     border-radius: 10px;
     width: 100%;
     height: 125px;
-    background-color: white;
+    background-color: rgba(189, 176, 176, 0.193);
     gap: 10px;
 }
 .Project-domain1{
     border-radius: 10px;
     overflow: hidden;
 }
+
+.Project-domain1{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    .Project-domain1 img{
+        position: relative;
+        z-index: -1;
+        opacity:0.4;
+    }
+
+    .Project-domain1 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #3e8e41;
+    }
+
 
 @media (max-width: 768px){
     .pic-section{
