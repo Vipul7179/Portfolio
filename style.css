@@ -458,4 +458,7 @@ html{
 .myemail{
     padding-top: 0px;
 }
+    .side-menu{
+    display: block;
+}
 }
