@@ -205,13 +205,12 @@
     <script>
       const toggleBtn = document.querySelector('.side-menu')
       const toggleBtnIcon = document.querySelector('.side-menu i')
-      let isOpen = false;
-      const toggleBtnMenu = document.querySelector('.dropdown-menu')
+      const dropDownMenu = document.querySelector('.dropdown-menu')
 
       toggleBtn.onclick = function () {
-        toggleBtnMenu.classList.toggle('open')
-        isOpen = !isOpen;
-        toggleBtnIcon.classList = isOpen
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
         ? 'fa-solid fa-xmark'
         :'fa-solid fa-bars'
       }
