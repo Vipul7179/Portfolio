@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 </head>
+
+<!-- oncontextmenu="return false;" -->
 <body class="enter" style="height: 100%;">
     <nav class="navigation">
     <div  class="container">
@@ -47,9 +49,9 @@
       <!-- header dropdown menu -->
       <div class="dropdown-menu">
         <li><a href="#" class="active">ABOUT</a></li>
-        <li><a href="#about">SKILLS</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#about" class="skills">SKILLS</a></li>
+        <li><a href="#projects" class="projects">PROJECTS</a></li>
+        <li><a href="#contact" class="contact">CONTACT</a></li>
         <li class="links">
           <a target="_blank" href="https://www.linkedin.com/in/vipul-singh-46792a1a4/"><i class="fab fa-linkedin" style="color: rgb(160, 200, 250);margin-right: 10px;"></i></a>
           <a target="_blank" href="https://www.instagram.com/v_i_p_u_ll/"><i class="fa-brands fa-instagram" style="color: rgb(255, 37, 255);margin-right: 10px;"></i></a>
@@ -59,6 +61,7 @@
 
      <!-- Banner start -->
 <div class="pic-section">
+  
   <div class="about-content" data-aos="fade-right">
       <h1>I am</h1>
       <h1>Experienced</h1>
@@ -191,8 +194,6 @@
               </div>
             </div>
           </div>
-          
-  
         </footer>
         <!-- Footer nav start ends-->
 
@@ -205,19 +206,33 @@
     <script>
       const toggleBtn = document.querySelector('.side-menu')
       const toggleBtnIcon = document.querySelector('.side-menu i')
-      let isOpen = false;
-      const toggleBtnMenu = document.querySelector('.dropdown-menu')
+      const dropDownMenu = document.querySelector('.dropdown-menu')
 
-      toggleBtn.onclick - function () {
-        toggleBtnMenu.classList.toggle('open')
-        isOpen = !isOpen;
-        toggleBtnIcon.classList = isOpen
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
         ? 'fa-solid fa-xmark'
         :'fa-solid fa-bars'
+        
       }
 
     </script>
      
+
+     <!-- <script>
+      Disable right-click context menu
+      window.addEventListener('contextmenu', function (e) {
+          e.preventDefault();
+      }, false);
+
+      Disable F12 key
+      window.addEventListener('keydown', function (e) {
+          if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) {
+              e.preventDefault(); // Prevent F12 and Ctrl+Shift+I
+          }
+      });
+  </script> -->
 </body>
 
 </html>

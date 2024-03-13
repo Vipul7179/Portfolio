@@ -92,9 +92,9 @@ body{
     height: 240px;
 }
 
-.dropdown-menu {
+/* .dropdown-menu {
     display: none;
-    position: absolute;
+    position: relative;
     right: 2rem;
     top: 60px;
     height: 0;
@@ -103,6 +103,10 @@ body{
     backdrop-filter: 10px;
     overflow: hidden;
     transition: max-height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+} */
+
+.dropdown-menu  {
+    display: none;
 }
 
 .dropdown-menu li{
@@ -407,22 +411,23 @@ html{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    /* background: linear-gradient(rgb(255, 251, 251) grey); */
     height: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    height: 125px;
+    background-color: rgba(30, 30, 30, 0.8);
+    /* box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1); */
+    color: #fff;        
+    gap: 10px;
 }
+
 
 
 /* mobile respoonsive */
 
 /* projects domain */
-.projects-section{
-    margin-top: 10px;
-    border-radius: 10px;
-    width: 100%;
-    height: 125px;
-    background-color: rgba(189, 176, 176, 0.193);
-    gap: 10px;
-}
 /* .Project-domain1{
     border-radius: 10px;
     overflow: hidden;
@@ -556,14 +561,48 @@ html{
 
 
 /* side menu */
-.dropdown-menu {
-    left: 2rem;
-    width: unset;
+.dropdown-menu  {
+    z-index: 1;
+    position: absolute;
+    right: 0rem;
+    top: 47px;
+    height: 0;
+    width: 100%;
+    background: rgb(42, 42, 42);
+    backdrop-filter: 10px;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: block;
+    border-radius: 10px;
 }
+.links{
+    gap: 32px;
+    margin-right: 26px;
+}
+.dropdown-menu .active{
+    display: none;
+}
+.dropdown-menu .skills{
+
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+
+}
+.dropdown-menu .projects{
+
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
 
 
 }
+.dropdown-menu .contact{
+
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
 
 
-
+}
+}
