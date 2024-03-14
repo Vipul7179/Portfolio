@@ -221,18 +221,25 @@
      
 
      <script>
-      // Disable right-click context menu
-      window.addEventListener('contextmenu', function (e) {
-          e.preventDefault();
-      }, false);
+        // Disable right-click context menu
+        window.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        }, false);
 
-      // Disable F12 key
-      window.addEventListener('keydown', function (e) {
-          if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) {
-              e.preventDefault(); // Prevent F12 and Ctrl+Shift+I
-          }
-      });
-  </script>
+        // Disable F12 key
+        window.addEventListener('keydown', function (e) {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) {
+                e.preventDefault(); // Prevent F12 and Ctrl+Shift+I
+            }
+        });
+
+        // Check if developer tools are open
+        window.addEventListener("resize", function () {
+            if ((window.outerHeight - window.innerHeight) > 100) {
+                alert("Developer tools detected! Please close them to continue browsing.");
+            }
+        });
+    </script>
 </body>
 
 </html>
