@@ -220,7 +220,7 @@
     </script>
      
 
-     <script>
+      <script>
         // Disable right-click context menu
         window.addEventListener('contextmenu', function (e) {
             e.preventDefault();
@@ -233,12 +233,16 @@
             }
         });
 
-        // Check if developer tools are open
-        window.addEventListener("resize", function () {
+        // Check if developer tools are open when the page is launched
+        window.addEventListener('DOMContentLoaded', function () {
+            setTimeout(checkDevTools, 1000); // Check after 1 second
+        });
+
+        function checkDevTools() {
             if ((window.outerHeight - window.innerHeight) > 100) {
                 alert("Developer tools detected! Please close them to continue browsing.");
             }
-        });
+        }
     </script>
 </body>
 
