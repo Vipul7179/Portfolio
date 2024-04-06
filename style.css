@@ -678,9 +678,16 @@ html{
     }
 }
 
-@media (min-width:769px) and (max-width:866px)
+@media (min-width:769px) and (max-width:1035px)
 {
     .links{
         display: none;
+    }
+    .pic-section{
+        height: 298px;
+    }
+
+    .about-content h1{
+        font-size: 40px;
     }
 }
