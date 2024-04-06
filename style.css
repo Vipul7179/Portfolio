@@ -462,6 +462,60 @@ html{
     }
 
 
+    /* auto scrool start */
+
+    .infinitescroll {
+        overflow: hidden;
+        padding: 25px 0px 0px;
+        -webkit-mask: linear-gradient(90deg,transparent,white 3%, white 80% transparent);
+        mask: linear-gradient(90deg, transparent, white 3%);
+      }
+      
+      .categorie-container {
+        display: inline-block;
+        white-space: nowrap;
+       
+        animation: scrollAnimation 35s linear infinite;
+        animation-play-state: running; /* Ensure animation is running by default */
+      }
+      
+      .categorie-container:hover {
+        animation-play-state: paused;
+      }
+      
+      @keyframes scrollAnimation {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-50%)); /* Adjust based on the number of duplicate images */
+        }
+      }
+      
+      .tools-scroll {
+        display: inline-block;
+        margin-right: 20px; /* Adjust spacing between images */
+      }
+      
+      .tools-scroll:last-child {
+        margin-right: 0; /* Remove margin for the last image to avoid extra space */
+      }
+      
+      .tools-scroll img {
+        
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+      }
+      
+      /* Duplicate images */
+      .tools-scroll:not(:last-child) {
+        margin-right: 20px; /* Adjust spacing between images */
+      }
+      
+
+      
+
 @media (max-width: 768px){
     .pic-section{
         background-image: linear-gradient(18deg,#f1f1e8 ,#a6a6a6,#c1c5c5);
@@ -621,5 +675,12 @@ html{
 @media (min-width: 769px) {
     .tools-images img {
         height: 100%; 
+    }
+}
+
+@media (min-width:769px) and (max-width:866px)
+{
+    .links{
+        display: none;
     }
 }
