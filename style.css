@@ -204,6 +204,9 @@ body{
     z-index: 1;
     position:sticky;
     top: 0;
+    margin-left: -13px;
+padding-left: 18px;
+    margin-right: -7px;
 }
 
 .tools-images{
@@ -256,6 +259,8 @@ body{
 .part1 img{
     max-width: 100%;
     height: auto;
+    border-radius: 15px;
+    box-shadow: 9px 16px 10px rgba(137, 137, 137, 0.99);
 }
 
 .first-video {
@@ -567,6 +572,12 @@ html{
         padding: 0px;
     } 
 
+    .part1 img{
+        border-radius: 15px;
+        box-shadow: 0px 5px 10px rgba(251, 248, 248, 0.3);
+    box-shadow: 9px 16px 10px rgba(137, 137, 137, 0.99);
+
+    }
     .part1 {
         padding: 20px; 
         flex-direction: column; 
