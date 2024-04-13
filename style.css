@@ -89,7 +89,7 @@ body{
 }
 
 .dropdown-menu.open{
-    height: 196px;
+    height: 47vh;
 }
 
 /* .dropdown-menu {
@@ -701,4 +701,6 @@ html{
     .about-content h1{
         font-size: 40px;
     }
+
+   
 }
