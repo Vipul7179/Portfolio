@@ -38,6 +38,8 @@
 
 
 <body oncontextmenu="return false;" class="enter" style="height: 100%;">
+
+  <div id="preloader"></div>
     <nav class="navigation">
     <div  class="container">
   
@@ -481,7 +483,19 @@
     }
   });
 </script>
- 
+
+<!-- preloader addded-->
+
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function(){
+    setTimeout(function() {
+      loader.style.display = "none";
+    }, 3000); 
+  });
+</script>
+
+<!-- preloader ended -->
   
 </body>
 
